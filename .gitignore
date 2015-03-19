@@ -18,6 +18,12 @@ lib64/
 parts/
 sdist/
 var/
+
+# Virtualenv packaging
+bin/
+include/
+local/
+
 *.egg-info/
 .installed.cfg
 *.egg
