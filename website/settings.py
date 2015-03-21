@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 from dj_database_url import parse as db_url
 from decouple        import config
 from unipath         import Path
+import os
 import dj_database_url
 
 BASE_DIR = Path(__file__).parent
@@ -41,6 +42,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'website.core',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,6 +53,11 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
+
+# PROJECT_PATH = os.path.dirname(os.path.realpath(__file__))
+
+# TEMPLATE_DIRS = (os.path.join(PROJECT_PATH, '/templates/'),)
+
 
 ROOT_URLCONF = 'website.urls'
 
