@@ -1,10 +1,134 @@
-<!DOCTYPE html>
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
 <html>
-<head>
-	<title>Lucas Castejon</title>
-</head>
-<body>
-	<h1>Lucas Castejon</h1>
-	<h3>www.castejon.me</h3>
-</body>
+	<head>
+		<!--[if lte IE 8]><script src="{% static 'css/ie/html5shiv.js' %}"></script><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="{% static 'css/ie/v8.css' %}" /><![endif]-->
+		<title>Lucas Castejon</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="WebSite's Lucas Castejon" />
+		<meta name="keywords"    content="Lucas Castejon - Quality Assurance" />
+		<link rel="stylesheet" href="{% static 'css/skel.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+		<link rel="icon" href="{% static 'img/favicon-lc.png' %} " type="image/x-icon"/>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1>Lucas Castejon</h1>
+					<p>Quality Assurance - <small>PlanoBê Technology</small></p>
+				</header>
+				<footer>
+					<a href="#banner" class="button style2 scrolly-middle">Aqui tem mais..</a>
+				</footer>
+			</section>
+
+		<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>Overflow</h2>
+				</header>
+				<p>Amo minha Família e o que faço, meu <a href="http://www.planobe.com.br" target="_blank">trabalho</a>, também adoro esportes um deles é <a href="https://www.google.com.br/search?q=Ginastica+Artistica&espv=2&biw=1366&bih=656&site=webhp&source=lnms&tbm=isch&sa=X&ei=xHoQVaDhNomAsQT8u4DoDA&ved=0CAYQ_AUoAQ" target="_blank">Ginástica Artistica</a>. É eu sei que você não sabe que esporte é esse, mais eu prático :D.</p> <p>Tenho amigos, eles dão risadas de mim, mas tenho amigos :).</p>
+				<footer>
+					<a href="#first" class="button style2 scrolly">Não é só isso, tem mais..</a>
+				</footer>
+			</section>
+
+		<!-- Feature 1 -->
+			<article id="first" class="container box style1 right">
+				<img class="image fit"src="{% static 'img/python_code.png' %}" width="14px !important"  height= "150px !important" />
+
+				<div class="inner">
+					<header>
+						<h2>Desenvolvedor Python</h2>
+					</header>
+					<p>Caso queira saber mais sobre essa linguagem, basta acessar as palestras que ministrei no <a href="http://pt.slideshare.net/lucascastejon">SlideShared</p></a>
+				</div>
+			</article>
+
+		<!-- Feature 2 -->
+			<article class="container box style1 left">
+				<img class="image fit" src="{% static 'img/fig/Figurinhas.png' %}" alt="" />
+				<div class="inner">
+					<header>
+						<h2>Conhecimentos</h2>
+					</header>
+					<p>Tenho como objetivo preencher todos espaços que estão em branco</p>
+				</div>
+			</article>
+
+		<!-- Portfolio -->
+			<article class="container box style2">
+				<header>
+					<h2>Eventos</h2>
+					<p></p>
+				</header>
+				<div class="inner gallery">
+					<div class="row 0%">
+						<div class="3u"><a href="{% static 'img/workshop/python_brasil3.jpg' %}" class="image fit"><img src="{% static 'img/workshop/python_brasil3.jpg' %}" alt="" title="Python Foundation Brasília" /></a></div>
+						<div class="3u"><a href="{% static 'img/workshop/python_brasil.jpg' %}" class="image fit"><img src="{% static 'img/workshop/python_brasil.jpg' %}" alt="" title="Python Brasil[9]" /></a></div>
+						<div class="3u"><a href="{% static 'img/workshop/python_brasil2.jpg' %}" class="image fit"><img src="{% static 'img/workshop/python_brasil2.jpg' %}" alt="" title="Sim, estou ai!" /></a></div>
+						<div class="3u"><a href="{% static 'img/workshop/workshop_unifran.jpg' %}" class="image fit"><img src="{% static 'img/workshop/workshop_unifran.jpg' %}" alt="" title="UNIFRAN - Universidade de Franca" /></a></div>
+					</div>
+					<div class="row 0%">
+						<div class="3u"><a href="{% static 'img/workshop/workshop_unifacef.jpg' %}" class="image fit"><img src="{% static 'img/workshop/workshop_unifacef.jpg' %}" alt="" title="Uni-FACEF - Centro Universitário de Franca" /></a></div>
+						<div class="3u"><a href="{% static 'img/workshop/workshop_fatec_franca.jpg' %}" class="image fit"><img src="{% static 'img/workshop/workshop_fatec_franca.jpg' %}" alt="" title="FATEC - Franca." /></a></div>
+						<div class="3u"><!-- <a href="{% static 'img/fulls/07.jpg' %}" class="image fit"><img src="{% static 'img/thumbs/07.jpg' %}" alt="" title="History was made here" /></a> --></div>
+						<div class="3u"><!-- <a href="{% static 'img/fulls/08.jpg' %}" class="image fit"><img src="{% static 'img/thumbs/08.jpg' %}" alt="" title="People come and go and walk away" /> --></a></div>
+					</div>
+				</div>
+			</article>
+
+		<!-- Contact -->
+			<article class="container box style3">
+				<header>
+					<h2>Contato</h2>
+					<p>Aceito feedbacks.</p>
+				</header>
+				<form method="post" action="#">
+					<div class="row 50%">
+						<div class="6u"><input type="text" class="text" name="Nome" placeholder="Name" /></div>
+						<div class="6u"><input type="text" class="text" name="E-mail" placeholder="Email" /></div>
+					</div>
+					<div class="row 50%">
+						<div class="12u">
+							<textarea name="message" placeholder="Mensagem"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="12u">
+							<ul class="actions">
+								<li><input type="submit" value="Enviar" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</article>
+
+
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="http://br.linkedin.com/in/lucascastejon/pt" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="http://fb.com/lucascastejon" target="_blank"  class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="https://twitter.com/lucascastejon" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="https://plus.google.com/108302126385843831538/posts" target="_blank" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+			</ul>
+			<div class="copyright">
+				<ul class="menu">
+					<li>&copy; 2015 Lucas Castejon. Todos Direitos Reservados.</li>
+					<!-- Design: HTML5 UP  http://html5up.net  -->
+					 
+				</ul>
+			</div>
+		</section>
+
+		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<script src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+		<script src="{% static 'js/jquery.poptrox.min.js' %}"></script>
+		<script src="{% static 'js/skel.min.js' %}"></script>
+		<script src="{% static 'js/init.js' %}"></script>
+	</body>
 </html>
